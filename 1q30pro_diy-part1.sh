@@ -14,4 +14,4 @@
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source
-echo 'src-git w2xg https://github.com/w2xg2022/op-package' >>feeds.conf.default
+#echo 'src-git w2xg https://github.com/w2xg2022/op-package' >>feeds.conf.default
