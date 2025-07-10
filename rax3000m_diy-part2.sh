@@ -6,12 +6,9 @@
 # See /LICENSE for more information.
 #
 # https://github.com/P3TERX/Actions-OpenWrt
-# File name: diy-part1.sh
-# Description: OpenWrt DIY script part 1 (Before Update feeds)
+# File name: diy-part2.sh
+# Description: OpenWrt DIY script part 2 (After Update feeds)
 #
 
-# Uncomment a feed source
-#sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
-
-# Add a feed source
-echo 'src-git qmodem https://github.com/FUjr/QModem.git;main' >> feeds.conf.default
+# Modify default hostname
+sed -i 's/OpenWrt/RAX3000M/g' package/base-files/files/bin/config_generate
