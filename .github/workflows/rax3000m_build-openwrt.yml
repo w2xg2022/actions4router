@@ -163,11 +163,11 @@ jobs:
       id: tag
       if: env.UPLOAD_RELEASE == 'true' && !cancelled()
       run: |
-        echo "release_tag=$(date +"%Y.%m.%d-%H%M-immortalwrt24.10-6.6-cmcc_rax3000m-237")" >> $GITHUB_OUTPUT
+        echo "release_tag=$(date +"%Y.%m.%d-%H%M-immortalwrt24.10_cmcc_rax3000m")" >> $GITHUB_OUTPUT
         touch release.txt
-        echo "RAX3000M with qmodem" >> release.txt
+        echo "Model： RAX3000M Nand" >> release.txt
         echo "IP：192.168.1.1" >> release.txt
-        echo "ID/PW：root/password" >> release.txt
+        echo "ID/PW：root/空" >> release.txt
         echo "status=success" >> $GITHUB_OUTPUT
 
     - name: Upload firmware to release
