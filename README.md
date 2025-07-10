@@ -1,3 +1,3 @@
 ## 测试中清单
 
-1. JCG Q30 PRO
+1. RAX3000M Nand
