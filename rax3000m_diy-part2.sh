@@ -12,3 +12,5 @@
 
 # Modify default hostname
 sed -i 's/ImmortalWrt/RAX3000M/g' package/base-files/files/bin/config_generate
+sed -i 's/UTC/CST-8/g' package/base-files/files/bin/config_generate
+sed -i 's/time.apple.com/ntp.tencent.com/g' package/base-files/files/bin/config_generate
