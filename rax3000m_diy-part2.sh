@@ -11,4 +11,4 @@
 #
 
 # Modify default hostname
-sed -i 's/OpenWrt/RAX3000M/g' package/base-files/files/bin/config_generate
+sed -i 's/ImmortalWrt/RAX3000M/g' package/base-files/files/bin/config_generate
