@@ -11,4 +11,4 @@
 #
 
 # Modify default hostname
-sed -i 's/ImmortalWrt/JDC_AX1800Pro/g' package/base-files/files/bin/config_generate
+sed -i 's/LibWrt/JDC_AX1800Pro/g' package/base-files/files/bin/config_generate
