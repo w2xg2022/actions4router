@@ -163,7 +163,7 @@ jobs:
       id: tag
       if: env.UPLOAD_RELEASE == 'true' && !cancelled()
       run: |
-        echo "release_tag=$(date +"%Y.%m.%d-%H%M-immortalwrt24.10_jdc_ax1800pro")" >> $GITHUB_OUTPUT
+        echo "release_tag=$(date +"%Y.%m.%d-%H%M-immortalwrt_jdc_ax1800pro")" >> $GITHUB_OUTPUT
         touch release.txt
         echo "Model：JDC_AX1800Pro (Arthur)" >> release.txt
         echo "IP：192.168.1.1" >> release.txt
