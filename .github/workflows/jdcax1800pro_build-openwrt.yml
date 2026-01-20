@@ -62,7 +62,7 @@ jobs:
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
 
     - name: Modify build.sh
-      run: cd openwrt && sed -i '/^make download -j$(($(nproc) \* 2))$/i sed -i '\''s/ImmortalWRT/JDC_AX1800Pro/g'\'' package/base-files/files/bin/config_generate' build.sh
+      run: cd openwrt && sed -i '/^make download -j$(($(nproc) \* 2))$/i wget -O .config https://raw.githubusercontent.com/w2xg2022/actions4router/main/jdcax1800pro.config\nsed -i '\''s/ImmortalWRT/JDC_AX1800Pro/g'\'' package/base-files/files/bin/config_generate' build.sh
 
     - name: Run build.sh
       run: cd openwrt && ./build.sh jdcloud_ipq60xx_immwrt
