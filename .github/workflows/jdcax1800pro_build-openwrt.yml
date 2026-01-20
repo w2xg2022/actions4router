@@ -167,7 +167,7 @@ jobs:
         touch release.txt
         echo "Model：JDC_AX1800Pro (Arthur)" >> release.txt
         echo "IP：192.168.1.1" >> release.txt
-        echo "ID/PW：root/password" >> release.txt
+        echo "ID/PW：root/空" >> release.txt
         echo "status=success" >> $GITHUB_OUTPUT
 
     - name: Upload firmware to release
